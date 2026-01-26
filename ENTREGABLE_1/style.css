@@ -1,36 +1,86 @@
 
-h1{
+h1 {
   font-size: xx-large;
   color: white;
-  font-style: italic;
+
 }
 
-h2{
-  font-style: italic;
+h2 {
   font-size: x-large;
+
 }
-p{
+
+p {
   color: white;
   font-size: large;
 }
-header{
+
+
+header {
+ 
   font-style: italic;
   background-color: black;
-
+  text-align: center;
 }
-a{
-  color: black;
-  background-color: lightgray;
 
-}
-footer{
+
+footer {
   font-size: small;
+  text-align: center;
+  color: gray;
 }
 
-.demo{
-  font-style: oblique;
+
+.demo {
+  font-style: oblique; 
 }
 
 
+#container {
+  display: grid;
+  width: 70%;
+  margin: 0 auto;
+  border: 1px solid black;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    "header header"
+    "nav nav"
+    "skills education"
+    "languages education"
+    "certificates certificates";
+  gap: 20px;
+  padding: 20px;
+}
 
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+  text-align: center;
+  background-color: lightgray;
+}
+
+nav a {
+  color: black;
+  margin: 10px;
+}
+
+#education {
+  grid-area: education;
+}
+
+#certificates {
+  grid-area: certificates;
+}
+
+#skills {
+  grid-area: skills;
+}
+
+#languages {
+  grid-area: languages;
+}
 
