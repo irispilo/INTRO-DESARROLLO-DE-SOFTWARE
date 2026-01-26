@@ -84,7 +84,7 @@ nav a {
   grid-area: languages;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 480px) {
   #container {
     display: grid;
     width: 100%;
@@ -98,5 +98,22 @@ nav a {
       "certificates";
   }
 }
+
+@media (max-width: 768px) {
+  #container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1 fr 1fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "skills"
+      "languages"
+      "education"
+      "certificates";
+  }
+}
+
+
 
 
