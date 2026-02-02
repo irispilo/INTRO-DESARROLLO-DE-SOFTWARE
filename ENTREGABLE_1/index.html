@@ -2,16 +2,17 @@
 <html>
     <head>
         <title>Iris Sucely Piló Guarcax, CV 2026</title>
-        <link rel="stylesheet" href="style.css">
-
+        <link rel="stylesheet" href = "style.css"link>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        
     </head>
-    
 
-    <body>
-        <div id="container">
-        <header>
+    
+   <div class="container-fluid">
+    <header>
         <h1>IRIS PILÓ</h1>
-        <img src="foto.png" alt="Foto de CV" width="200">
+        <img src="foto.png" alt="Foto de CV" width="200" class="img-thumbnail">
         <p>
             Estudiante de Ingeniería en Computer Science, con experiencia en areas administrativas, coordinación y
             comunicación intercultural. Destaco por mi capacidad de adaptación, pensamiento crítico y
@@ -19,8 +20,10 @@
             promuevan la autonomía, la creatividad y la responsabilidad, contribuyendo a la construcción de
             espacios más justos y colaborativos. 
         </p>
-         </header>
+      </header>
 
+    <body>
+        
         <nav>
         <br>
         <a href = "mailto:sucelypilo@ufm.edu">Contáctame</a>
@@ -30,31 +33,35 @@
         <br>
         </nav>
         
-        <section id="skills">
+        <div class="bloque lenguajes">
         <h2>Lenguajes de programación</h2>
             <ul>
                 <li>Python intermedio</li>
                 <li>C++ principiante</li>
                 <li>HTML aprendiz</li>
             </ul>
+        </div>
 
+        <div class="bloque idiomas">
+        <h2>Idiomas</h2>
+            <ol>
+                <li>Español Avanzado</li>
+                <li>Inglés Intermedio</li>
+            </ol>
+        </div>
+
+        <div class = "bloque skills">
         <h2>Skills</h2>
             <ul>
                 <li>Trabajo en equipo</li>
                 <li>Creatividad</li>
 
             </ul>
-        </section>
-
-        <section id="languages">
-        <h2>Idiomas</h2>
-            <ol>
-                <li>Español Avanzado</li>
-                <li>Inglés Intermedio</li>
-            </ol>
-        </section>
+        </div>
+    
 
         <section id="education">
+        <div class = "bloque educacion">
         <h2>Educación</h2>
         <table class="demo" border="1">
             <caption>Formación Académica</caption>
@@ -84,7 +91,11 @@
             
             <tbody>
         </table>
+        </div>
+        
 
+
+<div class ="bloque certificaciones">
 <section id="certificates">
 <h2>Certificaciones</h2>
 <table class= demo border="1">
@@ -115,11 +126,25 @@
     </tbody>
 </table>
 
+<section class="mb-5">
+  <h4>Descargar CV</h4>
+  <button class="btn btn-dark btn-sm" id="btn-print">PDF</button>
+</section>
+<script>
+document.getElementById('btn-print').addEventListener('click', () => {
+  window.print(); 
+});
+</script>
+<footer>
+ Guatemala, Guatemala, Enero 2026
+</footer>
+  
+</body>
 
-        
 </div>
-<footer>Guatemala, Guatemala, Enero 2026</footer>
-    </body>
+
+
+
 </html>
 
 
