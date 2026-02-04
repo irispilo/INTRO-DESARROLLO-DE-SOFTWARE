@@ -1,9 +1,9 @@
-// Modo oscuro
+
 function modoOscuro() {
   document.body.classList.toggle("oscuro");
 }
 
-// Saludo según la hora
+
 const hora = new Date().getHours();
 let mensaje = "";
 
@@ -31,3 +31,19 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+  const btnContacto = document.getElementById("btnContacto");
+  const contacto = document.getElementById("contacto");
+
+  btnContacto.addEventListener("click", () => {
+    if (contacto.style.display === "none") {
+      contacto.style.display = "block";
+      btnContacto.textContent = "Ocultar Información de Contacto";
+    } else {
+      contacto.style.display = "none";
+      btnContacto.textContent = "Mostrar Información de Contacto";
+    }
+  });
+
+
+
