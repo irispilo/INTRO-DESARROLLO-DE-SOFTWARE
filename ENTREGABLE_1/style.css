@@ -92,3 +92,15 @@ grid-template-rows: auto 300px auto;
 
 /* espacio entre celdas */
 
+body {
+background-color: white;
+color: black;
+}
+.oscuro {
+background-color: black;
+color: white;
+}
+
+.filtro {
+  display: none;
+}
