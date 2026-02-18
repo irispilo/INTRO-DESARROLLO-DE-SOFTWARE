@@ -1,0 +1,12 @@
+
+/* si usas [class.oculto] en vez de *ngIf */
+.oculto { display: none; }
+
+/* Opcional: transición visual */
+#educacion {
+  transition: max-height 0.3s ease, opacity 0.25s ease;
+  overflow: hidden;
+  
+}
+
+

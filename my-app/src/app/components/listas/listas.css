@@ -1,0 +1,32 @@
+
+.botones {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(0, 3, 3);
+  border-radius: 13px;
+  border-color: rgb(180, 255, 183);
+  font-style: oblique;
+}
+
+input{
+    display: block;
+  margin: 0 auto;
+  background-color: rgb(240, 240, 240);
+  border-radius: 13px;
+  border-color: rgb(174, 255, 208);
+  font-style: oblique;
+}
+
+
+h2{
+    font-weight: bold;
+}
+
+li{
+    font-size: large;
+}
+
+.filtro {
+  display: none;
+}
+
