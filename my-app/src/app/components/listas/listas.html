@@ -1,0 +1,64 @@
+<div class="row">
+  <div class="col">
+    <button (click)="toggleContacto()">
+      {{ mostrarInfo ? 'Ocultar información' : 'Mostrar información de Contacto' }}
+    </button>
+  </div>
+
+  <div class="col">
+    <input 
+  type="text" 
+  id="buscador"
+  placeholder="Buscar..."
+  (keyup)="filtrar($event)">
+
+  </div>
+</div>
+
+
+<nav *ngIf="mostrarInfo">
+  <br>
+  <div class="row">
+    <div class="col">
+         <a href="mailto:sucelypilo@ufm.edu">Contáctame</a>
+    </div>
+    <div class="col">
+         <a href="https://github.com/irispilo" target="_blank">Ver perfil de GitHub</a>
+    </div>
+    <div class="col">
+        <a href="https://www.linkedin.com/in/irissucely777/" target="_blank">Ver perfil de LinkedIn</a>
+    </div>
+  </div>
+
+  <br>
+</nav>
+
+
+        
+       <div class="row">
+        <div class="col">
+        <h2>Lenguajes de programación</h2>
+            <ul>
+                <li class="subtitulo">Python intermedio</li>
+                <li class="subtitulo">C++ principiante</li>
+                <li class="subtitulo">HTML aprendiz</li>
+            </ul>
+        </div>
+
+        <div class="col">
+        <h2>Idiomas</h2>
+            <ol>
+                <li class="subtitulo">Español Avanzado</li>
+                <li class="subtitulo">Inglés Intermedio</li>
+            </ol>
+        </div>
+
+        <div class="col">
+        <h2>Skills</h2>
+            <ul>
+                <li class="subtitulo">Trabajo en equipo</li>
+                <li class="subtitulo">Creatividad</li>
+
+            </ul>
+        </div>
+        </div>

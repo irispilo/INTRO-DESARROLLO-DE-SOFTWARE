@@ -1,0 +1,80 @@
+<button (click)="toggleEducacion()">
+  {{ mostrarEducacion ? 'Ocultar educación' : 'Mostrar educación' }}
+</button>
+
+<div *ngIf="mostrarEducacion">
+
+  <div class="row">
+
+    
+    <div class="col">
+      <h2>Educación</h2>
+
+      <table class="demo" border="1">
+        <caption>Formación Académica</caption>
+        <thead>
+          <tr>
+            <th scope="col">Institución</th>
+            <th scope="col">Título</th>
+            <th scope="col">Año</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Universidad Francisco Marroquín</td>
+            <td>Licenciatura en Computer Science</td>
+            <td>En curso</td>
+          </tr>
+          <tr>
+            <td>Universidad del Valle de Guatemala</td>
+            <td>Técnico Universitario en Informática</td>
+            <td>2024</td>
+          </tr>
+          <tr>
+            <td>Colegio MAIA</td>
+            <td>Bachillerato en Ciencias y Letras</td>
+            <td>2022</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    
+    <div class="col">
+      <section id="certificates">
+        <h2>Certificaciones</h2>
+
+        <table class="demo" border="1">
+          <caption>Certificaciones obtenidas</caption>
+          <thead>
+            <tr>
+              <th scope="col">Año</th>
+              <th scope="col">Institución</th>
+              <th scope="col">Curso</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2025</td>
+              <td>FranklinCovey</td>
+              <td>The 7 Habits of Highly Effective People</td>
+            </tr>
+            <tr>
+              <td>2024</td>
+              <td>Vital Voices</td>
+              <td>Business Model Canvas</td>
+            </tr>
+            <tr>
+              <td>2022</td>
+              <td>UVG</td>
+              <td>Excel Avanzado</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </section>
+    </div>
+
+  </div>
+
+</div>

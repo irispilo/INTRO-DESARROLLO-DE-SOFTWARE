@@ -1,0 +1,50 @@
+/* You can add global styles to this file, and also import other style files */
+button{
+    display: block;
+  margin: 0 auto;
+  background-color: rgb(240, 240, 240);
+  border-radius: 13px;
+  border-color: rgb(174, 255, 208);
+  font-style: oblique;
+
+}
+
+.col{
+    
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(180, 193, 255);
+    margin: 10px;
+    margin-inline-start: 30px;
+    margin-inline-end: 30px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 10px;
+    align-content: center;
+    
+}
+
+/* styles.css global */
+body {
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: #eeeeee;
+}
+
+/* Ajustes para botones cuando el body tiene dark-mode */
+.dark-mode button {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+footer {
+  text-align: right;
+  margin: 20px;
+  font-size: small;
+  font-weight: bold;
+
+}

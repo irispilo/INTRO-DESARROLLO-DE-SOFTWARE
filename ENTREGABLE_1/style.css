@@ -31,71 +31,25 @@ footer {
 }
 
 
-#container {
-  display: grid;
-  width: 70%;
-  margin: 0 auto;
-  border: 1px solid black;
-  grid-template-columns: 1fr 2fr;
-  grid-template-areas:
-    "header header"
-    "nav nav"
-    "skills education"
-    "languages education"
-    "certificates certificates";
-  gap: 20px;
-  padding: 20px;
-}
-
-
-header {
-  grid-area: header;
-}
-
 nav {
   grid-area: nav;
   text-align: center;
   background-color: lightgray;
+  align-content: center;
 }
+
 
 nav a {
   color: black;
   margin: 10px;
 }
 
-#education {
-  grid-area: education;
-}
-
-#certificates {
-  grid-area: certificates;
-}
-
-#skills {
-  grid-area: skills;
-}
-
-#languages {
-  grid-area: languages;
-}
-
-nav{
-  align-content: center;
-}
-
-/*.container {
-display: grid;
-grid-template-columns: repeat(2,1fr);
-grid-template-rows: auto 300px auto;
-/* filas personalizadas */
-/*gap: 10px;}
-
-/* espacio entre celdas */
 
 body {
 background-color: white;
 color: black;
 }
+
 .oscuro {
 background-color: black;
 color: white;
