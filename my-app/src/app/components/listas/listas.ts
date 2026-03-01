@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   standalone: true,
   selector: 'app-listas',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterOutlet],
   templateUrl: './listas.html',
   styleUrl: './listas.css',
 })
