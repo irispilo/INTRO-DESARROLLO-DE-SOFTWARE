@@ -11,7 +11,8 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, Header, Listas, Tablas, Footer, CommonModule],
+  imports: [RouterOutlet,CommonModule],
+  /*imports: [RouterOutlet, Header, Listas, Tablas, Footer, CommonModule],*/
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,9 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit, Renderer2 } from '@angular/core';
 
 @Component({
   selector: 'app-header',
   standalone: true, 
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './header.html',
   styleUrls: ['./header.css'],
 })
