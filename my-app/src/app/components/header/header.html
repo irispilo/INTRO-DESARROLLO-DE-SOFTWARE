@@ -3,7 +3,7 @@
               <h1 class="saludo">{{ mensaje }}</h1>  
         </div>
         <div class="col">
-                <button (click)="imprimir()">Imprimir</button>
+                <button (click)="imprimir()">{{ 'Imprimir' | uppercase }}</button>
         </div>
         <div class="col">
               <button (click)="toggleModoOscuro()"> {{ modoOscuro ? 'Modo claro' : 'Modo oscuro' }}</button>
@@ -13,7 +13,7 @@
 
 <header>
         <p id="saludo"></p>
-        <h1>IRIS PILÓ</h1>
+        <h1>{{ 'IRIS PILÓ' |  titlecase  }}</h1>
         <div class="row">
         <div class="col">
         <img src="assets/foto.png" alt="Foto de CV" width="200" class="img-thumbnail">
