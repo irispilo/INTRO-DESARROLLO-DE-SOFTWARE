@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { Data } from '../../data'
+
 
 @Component({
   standalone: true,
@@ -9,7 +11,16 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './listas.html',
   styleUrl: './listas.css',
 })
-export class Listas {
+export class Listas implements OnInit{
+  
+
+ skills: string[] = [];
+
+ constructor(private data: Data) {}
+ ngOnInit() {
+ this.skills = this.data.getSkills();
+ //console.log(this.skills); 
+ }
 
 
    mostrarInfo: boolean = false;
@@ -40,3 +51,4 @@ export class Listas {
 }
 
 }
+
