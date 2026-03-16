@@ -3,8 +3,11 @@ import { Header } from './components/header/header';
 import { Listas } from './components/listas/listas';
 import { Tablas } from './components/tablas/tablas';
 import { Footer } from './components/footer/footer';
+import { Projects } from './components/projects/projects';
 
 export const routes: Routes = [
+
+{ path: '', component: Header, pathMatch: 'full' },
 
 {path: "header", component: Header},
 
@@ -13,7 +16,7 @@ export const routes: Routes = [
         {path: "tablas", component: Tablas}
     ]
 },
-
+{path: "projects", component: Projects},
 {path: "footer", component: Footer} 
 
 ];
