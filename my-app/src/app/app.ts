@@ -1,5 +1,5 @@
 import { Component, signal } from '@angular/core';
-
+import { RouterModule } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { Header } from './components/header/header';
 import { Listas } from "./components/listas/listas";
@@ -11,8 +11,8 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,CommonModule],
-  /*imports: [RouterOutlet, Header, Listas, Tablas, Footer, CommonModule],*/
+  imports: [RouterOutlet,CommonModule, RouterModule],
+  /*imports: [RouterOutlet, Header, Listas, Tablas, Footer, CommonModule, RouterModule],*/
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

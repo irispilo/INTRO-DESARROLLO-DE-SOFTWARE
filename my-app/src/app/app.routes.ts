@@ -3,8 +3,12 @@ import { Header } from './components/header/header';
 import { Listas } from './components/listas/listas';
 import { Tablas } from './components/tablas/tablas';
 import { Footer } from './components/footer/footer';
+import { Projects } from './components/projects/projects';
+import { Contribuition } from './contribuition/contribuition';
 
 export const routes: Routes = [
+
+{ path: '', component: Header, pathMatch: 'full' },
 
 {path: "header", component: Header},
 
@@ -13,8 +17,9 @@ export const routes: Routes = [
         {path: "tablas", component: Tablas}
     ]
 },
-
-{path: "footer", component: Footer} 
+{path: "projects", component: Projects},
+{path: "footer", component: Footer},
+{path: "contribution", component: Contribuition} 
 
 ];
 

@@ -1,0 +1,83 @@
+.contributions-section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 2px solid #28a745;
+  padding-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #586069;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.contributions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.2rem;
+}
+
+.contribution-card {
+  border: 1px solid #e1e4e8;
+  border-radius: 8px;
+  padding: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  transition: box-shadow 0.2s;
+  border-top: 3px solid #28a745;
+}
+
+.contribution-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #586069;
+}
+
+.contribution-card h3 {
+  font-size: 1rem;
+  color: #28a745;
+  margin: 0;
+  word-break: break-word;
+}
+
+.description {
+  font-size: 0.85rem;
+  color: #586069;
+  flex-grow: 1;
+}
+
+.meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.8rem;
+  color: #586069;
+}
+
+.contribution-card a {
+  font-size: 0.85rem;
+  color: #28a745;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contribution-card a:hover {
+  text-decoration: underline;
+}
+
+.loading,
+.empty {
+  color: #586069;
+  font-style: italic;
+}

@@ -1,0 +1,18 @@
+<section class="projects-section">
+  <h2>Proyectos</h2>
+  <div class="projects-grid">
+    @for (repo of repos; track repo.id) {
+      <div class="project-card">
+        <h3>{{ repo.name }}</h3>
+        <p class="description">{{ repo.description || 'Sin descripción' }}</p>
+        <div class="meta">
+          <span class="stars">⭐ {{ repo.stargazers_count }}</span>
+          <span class="language">{{ repo.language }}</span>
+        </div>
+        <a [href]="repo.html_url" target="_blank" rel="noopener">
+          Ver repositorio →
+        </a>
+      </div>
+    }
+  </div>
+</section>
