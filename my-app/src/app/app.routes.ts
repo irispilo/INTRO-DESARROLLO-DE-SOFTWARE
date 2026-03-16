@@ -4,6 +4,7 @@ import { Listas } from './components/listas/listas';
 import { Tablas } from './components/tablas/tablas';
 import { Footer } from './components/footer/footer';
 import { Projects } from './components/projects/projects';
+import { Contribuition } from './contribuition/contribuition';
 
 export const routes: Routes = [
 
@@ -17,7 +18,8 @@ export const routes: Routes = [
     ]
 },
 {path: "projects", component: Projects},
-{path: "footer", component: Footer} 
+{path: "footer", component: Footer},
+{path: "contribution", component: Contribuition} 
 
 ];
 

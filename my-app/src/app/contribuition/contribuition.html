@@ -1,0 +1,32 @@
+<section class="contributions-section">
+  <h2>Colaboraciones</h2>
+  <p class="subtitle">Proyectos trabajados con alejandro-ufm</p>
+
+  @if (loading) {
+    <p class="loading">Cargando repositorios...</p>
+  }
+
+  @if (empty) {
+    <p class="empty">No se encontraron repositorios.</p>
+  }
+
+  <div class="contributions-grid">
+    @for (repo of repos; track repo.id) {
+      <div class="contribution-card">
+        <div class="card-header">
+          <span class="owner">{{ repo.owner.login }}</span>
+          <span class="language">{{ repo.language || 'N/A' }}</span>
+        </div>
+        <h3>{{ repo.name }}</h3>
+        <p class="description">{{ repo.description || 'Sin descripción' }}</p>
+        <div class="meta">
+          <span>⭐ {{ repo.stargazers_count }}</span>
+          <span>🍴 {{ repo.forks_count }}</span>
+        </div>
+        <a [href]="repo.html_url" target="_blank" rel="noopener">
+          Ver repositorio →
+        </a>
+      </div>
+    }
+  </div>
+</section>
