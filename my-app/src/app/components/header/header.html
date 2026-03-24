@@ -1,37 +1,38 @@
 <div class="row">
-        <div class="col-8">
-              <h1 class="saludo">{{ mensaje }}</h1>  
-        </div>
-        <div class="col">
-                <button (click)="imprimir()">{{ 'Imprimir' | uppercase }}</button>
-        </div>
-        <div class="col">
-              <button (click)="toggleModoOscuro()"> {{ modoOscuro ? 'Modo claro' : 'Modo oscuro' }}</button>
-        </div>
+  <div class="col-8">
+    <h1 class="saludo">{{ textos.saludo }}</h1>
+  </div>
+
+  <div class="col">
+    <button (click)="imprimir()">{{ textos.imprimir | uppercase }}</button>
+  </div>
+
+  <div class="col">
+    <button (click)="toggleModoOscuro()">
+      {{ modoOscuro ? textos.modoClaro : textos.modoOscuro }}
+    </button>
+  </div>
 </div>
 
+<ng-container *ngIf="isBrowser">
+  <div class="mt-2">
+    <button (click)="traducirHeader('EN')">🌍 EN</button>
+    <button (click)="traducirHeader('ES')">🌍 ES</button>
+  </div>
 
-<header>
-        <p id="saludo"></p>
-        <h1>{{ 'IRIS PILÓ' |  titlecase  }}</h1>
-        <div class="row">
+  <header>
+    <div>
+      <h1>{{ 'IRIS PILÓ' | titlecase }}</h1>
+
+      <div class="row">
         <div class="col">
-        <img src="assets/foto.png" alt="Foto de CV" width="200" class="img-thumbnail">
-
+          <img src="assets/foto.png" alt="Foto de CV" width="200" class="img-thumbnail">
         </div>
+
         <div class="col-9">
-                <p>
-            Estudiante de Ingeniería en Computer Science, con experiencia en areas administrativas, coordinación y
-            comunicación intercultural. Destaco por mi capacidad de adaptación, pensamiento crítico y
-            resolución de problemas. Me interesa desarrollar soluciones innovadoras en entornos que
-            promuevan la autonomía, la creatividad y la responsabilidad, contribuyendo a la construcción de
-            espacios más justos y colaborativos. 
-        </p>
-
+          <p>{{ textos.parrafo }}</p>
         </div>
-        </div>
-
-</header>
-
-
-
+      </div>
+    </div>
+  </header>
+</ng-container>
